@@ -412,6 +412,8 @@ public class JsonRpcServer {
 				if (error==null) {
 					error = new JsonError(
 						0, e.getMessage(), e.getClass().getName());
+				}else{
+					thrown=null;
 				}
 			}
 
