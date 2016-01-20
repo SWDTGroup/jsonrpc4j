@@ -8,7 +8,7 @@ package com.googlecode.jsonrpc4j;
  * @author Alexander Makarov
  * 
  */
-public class ErrorCodeException extends Exception {
+public class ErrorCodeException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	public int errorCode = 0;
 
