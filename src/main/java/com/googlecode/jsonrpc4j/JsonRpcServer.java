@@ -51,7 +51,7 @@ public class JsonRpcServer {
 	public static final String JSONRPC_RESPONSE_CONTENT_TYPE = "application/json-rpc";
 
 	public static final ErrorResolver DEFAULT_ERRROR_RESOLVER
-		= new MultipleErrorResolver(AnnotationsErrorResolver.INSTANCE, DefaultErrorResolver.INSTANCE);
+		= new MultipleErrorResolver(ErrorCodeResolver.INSTANCE, AnnotationsErrorResolver.INSTANCE);
 
 	private static Class<?> WEBPARAM_ANNOTATION_CLASS;
 	private static Method WEBPARAM_NAME_METHOD;

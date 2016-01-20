@@ -6,11 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation for holding an array of @JsonRpcError annotations
- * for a method.
- *
+ * Annotation for holding an array of @JsonRpcError annotations for a method.
+ * 
  */
-@Target(ElementType.METHOD)
+@Target(value = { ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface JsonRpcErrors {
 
